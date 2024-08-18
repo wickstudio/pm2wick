@@ -1,0 +1,44 @@
+{
+    "name": "pm2wick",
+    "version": "1.0.0",
+    "description": "Manage your PM2 processes.",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "bin": {
+        "pm2wick": "./dist/bin/pm2wick.js"
+    },
+    "scripts": {
+        "build": "tsc",
+        "start": "npm run build && node dist/bin/pm2wick.js",
+        "test": "jest"
+    },
+    "keywords": [
+        "PM2",
+        "Discord",
+        "Bot",
+        "Process Management",
+        "Wick Studio"
+    ],
+    "author": "Wick Studio",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/wickstudio/pm2wick.git"
+    },
+    "bugs": {
+        "url": "https://github.com/wickstudio/pm2wick/issues"
+    },
+    "homepage": "https://github.com/wickstudio/pm2wick#readme",
+    "dependencies": {
+        "axios": "^1.7.4",
+        "uuid": "^9.0.0"
+    },
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/uuid": "^10.0.0",
+        "jest": "^29.7.0",
+        "ts-jest": "^29.2.4",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.2.2"
+    }
+}
